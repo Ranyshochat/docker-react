@@ -10,4 +10,4 @@ before_install:
 
 
 script:
-  - docker run ranyshochat/docker-react npm run test -- --coverage
+  - docker run -e CI=true ranyshochat/docker-react npm run test
